@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../photos/layered-waves-haikei.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto';
+}
+
+.container {
+    width: 650px;
+    height: 520px;
+    background-color: rgb(190, 126, 7);
+    border: 1px solid black;
+    box-shadow: 10px 10px 50px 25px rgb(112, 73, 0);
+    text-align: center;
+    margin-top: 130px;
+}
+
+h1 {
+    color: wheat;
+    font-size: 30px;
+}
+
+.middle_dropdown #time, #date {
+    width: 220px;
+    padding: 20px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.main_dropdown #activity, #goal {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+#date {
+    background-color: rgba(0, 0, 0, 0.404);
+    height: 18px;
+    margin-left: 20px;
+}
+
+#activity {
+    width: 500px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+#goal {
+    width: 500px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+#save {
+    cursor: pointer;
+    width: 200px;
+    padding: 15px;
+    font-size: 15px;
+    background-color: 	black;
+    color:#00FF00;
+    margin-top: 50px;
+    margin-left: 300px;
+    transition: ease 0.2s;
+}
+
+#save:hover {
+    transform: translateY(-5px);
+}
+
+.result {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url('../photos/layered-waves-haikei.png');
+        background-repeat: repeat-y;
+    }
+
+    .container {
+        width: 450px;
+        margin-left: 100px;
+    }
+    
+    .middle_dropdown #time, #date {
+        width: 150px;
+        padding: 15px;
+    }
+    
+    .main_dropdown #activity, #goal {
+        width: 400px;
+    }
+
+    #save {
+        padding: 10px;
+    }
+}

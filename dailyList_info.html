@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dailyList_info.css">
+    <title>Daily List</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Enter what you did</h1>
+        <div class="middle_dropdown">   
+            <select name="time" id="time">
+                <option value="Questions">What time did you do it?</option>
+                <option value="Midnight">Midnight</option>
+                <option value="Early morning">Early morning</option>
+                <option value="Morning">Morning</option>
+                <option value="Midday">Midday</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+                <option value="Night">Night</option>
+                <option value="Last night">Last night</option>
+            </select>
+            <input type="date" name="date" id="date">
+        </div>
+        <div class="main_dropdown">
+            <textarea name="activity" id="activity" placeholder="What did you do?"></textarea>
+            <input type="text" name="goal" id="goal" placeholder="Why did you do this?">
+        </div>
+        <button id="save">Save</button>
+        <div class="result"></div>
+    </div>
+
+    <script src="dailyList_info.js"></script>
+    
+</body>
+</html>
